@@ -5,11 +5,9 @@ import com.fast.pages.LoginPage;
 import com.fast.pages.MyAccountPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.StepGroup;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
 
-public class LoginSteps extends ScenarioSteps {
+public class AdminSteps extends ScenarioSteps {
 
     HomePage homePage;
     LoginPage loginPage;
@@ -24,7 +22,7 @@ public class LoginSteps extends ScenarioSteps {
     @Step
     public void goToLogin(){
 
-        homePage.clicklogInLink();
+        homePage.clicklogInLink ();
     }
 
     @Step
@@ -34,9 +32,9 @@ public class LoginSteps extends ScenarioSteps {
     }
 
     @Step
-    public void setPassword(){
+    public void setPassword() {
 
-        loginPage.setPasswordField();
+        loginPage.setPasswordField ();
     }
 
     @Step
@@ -44,19 +42,6 @@ public class LoginSteps extends ScenarioSteps {
 
         loginPage.clickOnloginButton();
     }
-
-    @Step
-    public void loginWithInvalidCharacters(){loginPage.invalidCharacters();
-    }
-
-
-
-    @Step
-    public void checkLoggedIn(){
-
-
-    }
-
     @StepGroup
     public void login(){
         navigateToHomepage();
@@ -67,18 +52,14 @@ public class LoginSteps extends ScenarioSteps {
         checkLoggedIn();
     }
 
-    public void clickOnLoginButton() {
+    private void checkLoggedIn() {
     }
 
-    public void AsAdmin() {
+    private void clickOnLoginButton() {
+    }
+    @Step
+    public void clickOnHowddyAdminButton(){
+
     }
 
-    public void validAdminCharacters() {
-    }
-
-    public void clickOnMyAccountButton() {
-    }
-
-    public void clickLoginButton() {
-    }
 }

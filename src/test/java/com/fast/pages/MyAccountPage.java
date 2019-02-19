@@ -15,4 +15,7 @@ public class MyAccountPage extends PageObject {
     public boolean checkLoggedIn(){
         return welcomeMessageStrong.containsText("gbyea07 (not gbyea07? Log out)");
     }
+
+
+
 }

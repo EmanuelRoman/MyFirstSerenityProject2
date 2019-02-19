@@ -23,12 +23,17 @@ public class LoginPage extends PageObject {
     }
 
     public void setPasswordField(){
-
         typeInto(passwordField, "parolaexamen");
     }
 
-    public void clickLoginButton(){
+    public void invalidCharacters(){
+        typeInto (emailField,"asada@sepoate.com");
+        typeInto (passwordField, "parol");
 
+    }
+
+
+    public void clickLoginButton(){
         clickOn(loginButton, "login");
     }
 
@@ -36,7 +41,16 @@ public class LoginPage extends PageObject {
     }
 
 
+
     public void clickOnloginButton() {
+    }
+
+
+    public void validAdminCharachters() {
+        waitFor (emailField);
+        typeInto (emailField, "admin");
+        waitFor (passwordField);
+        typeInto (passwordField, "parola11");
     }
 }
 

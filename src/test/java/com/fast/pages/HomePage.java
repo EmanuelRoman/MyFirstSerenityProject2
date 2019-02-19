@@ -22,4 +22,5 @@ public class HomePage extends PageObject {
         clickOn(logInLink);
     }
 
-}
+    }
+

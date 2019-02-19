@@ -26,6 +26,16 @@ public class LoginTests {
        loginSteps.clickOnLoginButton();
 
     }
+    @Test
+    public void invalidLoginTest(){
+        loginSteps.navigateToHomepage();
+        loginSteps.goToLogin();
+        loginSteps.loginWithInvalidCharacters();
+        loginSteps.clickOnLoginButton();
+
+    }
 
 
-}
+    }
+
+
