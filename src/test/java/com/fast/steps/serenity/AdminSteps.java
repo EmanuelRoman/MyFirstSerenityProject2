@@ -58,7 +58,8 @@ public class AdminSteps extends ScenarioSteps {
     private void clickOnLoginButton() {
     }
     @Step
-    public void clickOnHowddyAdminButton(){
+    public void clickOnHowddyAdminLink(){
+
 
     }
 

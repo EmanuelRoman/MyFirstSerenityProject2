@@ -17,6 +17,7 @@ public class LoginPage extends PageObject {
     @FindBy(id = "login")
     private WebElementFacade loginButton;
 
+
     public void setEmailField(){
         waitFor(emailField);
         typeInto(emailField,"gbyea07@gmail.com");
@@ -46,11 +47,18 @@ public class LoginPage extends PageObject {
     }
 
 
+
+
     public void validAdminCharachters() {
         waitFor (emailField);
         typeInto (emailField, "admin");
         waitFor (passwordField);
         typeInto (passwordField, "parola11");
+    }
+
+
+    public void setLoginButton(WebElementFacade loginButton) {
+        this.loginButton = loginButton;
     }
 }
 

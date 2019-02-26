@@ -16,6 +16,6 @@ public class MyAccountPage extends PageObject {
         return welcomeMessageStrong.containsText("gbyea07 (not gbyea07? Log out)");
     }
 
-
-
+    @FindBy (css = "menupop with-avatar")
+    private WebElementFacade HowdyAdminLink;
 }

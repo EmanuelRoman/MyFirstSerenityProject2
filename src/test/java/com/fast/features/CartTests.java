@@ -5,6 +5,7 @@ import com.fast.steps.serenity.LoginSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
@@ -20,7 +21,14 @@ public class  CartTests {
     @Steps
     CartSteps cartSteps;
 
-    public void addToCart() {
+    @Test
+    public void UpdateCart() {
         loginSteps.login();
+        cartSteps.clickOnQuantityButton ();
+        cartSteps.pushOnUpdateButton ();
+        cartSteps.clickOnProceedToCheckoutButton ();
+        cartSteps.clickOnAddToCartButton ();
+        cartSteps.pushOnAddToCartButton();
     }
+
 }

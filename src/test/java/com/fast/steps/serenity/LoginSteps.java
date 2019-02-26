@@ -46,7 +46,9 @@ public class LoginSteps extends ScenarioSteps {
     }
 
     @Step
-    public void loginWithInvalidCharacters(){loginPage.invalidCharacters();
+    public void loginWithInvalidCharacters() {
+
+        loginPage.invalidCharacters();
     }
 
 
@@ -81,4 +83,11 @@ public class LoginSteps extends ScenarioSteps {
 
     public void clickLoginButton() {
     }
+
+    @Step
+    public void clickOnHowddyAdminLink(){
+
+    }
+
 }
+

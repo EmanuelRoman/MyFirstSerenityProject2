@@ -11,4 +11,24 @@ import net.thucydides.core.steps.ScenarioSteps;
 import org.junit.Assert;
 
 public class CartSteps extends ScenarioSteps {
+    HomePage homePage;
+    LoginPage loginPage;
+
+
+    public void clickOnAddToCartButton() {
+    }
+
+    public void clickOnQuantityButton() {
+    }
+
+    public void pushOnUpdateButton() {
+    }
+
+    public void clickOnProceedToCheckoutButton() {
+    }
+
+    public void pushOnAddToCartButton(){
+
+    }
+
 }
